@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body
+{
+    background-color: #333;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    border-radius: 0px;
+}
+
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+}
+
+@keyframes example {
+    25%   {background-color:yellow; left:200px; top:0px;}
+    0%  {background-color:red; left:0; top:200px;}
+</style>
+</head>
+<body>
+
+<!--button id="animate">Animate</button-->
+
+<div id="a"><h2 style="font-size:50px;">P</h2></div>
+<br><br>
+<div id="b"><h2 style="font-size:50px;">U</h2></div>
+<br><br>
+<div id="c"><h2 style="font-size:50px;">Z</p></div>
+<br><br>
+<div id="d"><h2 style="font-size:50px;">Z</p></div>
+<br><br>
+<div id="e"><h2 style="font-size:50px;">L</p></div>
+<br><br>
+<div id="f"><h2 style="font-size:50px;">E</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<script>
+
+		var a=document.querySelector("#a")
+    	function add()
+    	{
+    		a.style.animationDuration="5s";
+        	a.style.borderRadius="10px"
+     
+       	}
+    	add()
+
+    	var b=document.querySelector("#b")
+    	function add2()
+    	{
+    		b.style.animationDuration="10s";
+        	b.style.borderRadius="15px"
+    	}
+    	add2()
+
+    	var c=document.querySelector("#c")
+    	function add3()
+    	{
+    		c.style.animationDuration="15s";
+    		c.style.borderRadius="10px"
+   		}
+    	add3()
+
+     	var d=document.querySelector("#d")
+    	function add4()
+    	{
+    		d.style.animationDuration="20s";
+        	d.style.borderRadius="15px"
+    	}
+    	add4()
+
+    	var e=document.querySelector("#e")
+    	function add5()
+    	{
+    		e.style.animationDuration="25s";
+        	e.style.borderRadius="10px"
+    	}
+    	add5()
+
+    	var f=document.querySelector("#f")
+    	function add6()
+    	{
+    		f.style.animationDuration="30s";
+        	f.style.borderRadius="15px"
+    	}
+    	add6()
+  
+
+</script>
+
+</body>
+</html>

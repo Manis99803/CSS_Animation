@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body
+{
+	background-color: #333;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    border-radius: 0px;
+}
+
+
+@keyframes example {
+    0%   
+    {
+    	background-color:red; 
+    	left:0px;
+    	top:0px;
+    	translate:translate(0,0)
+    	opacity:0.3;
+
+    }
+    25%  {background-color:yellow; left:200px; top:0px;}
+   /* 50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}*/
+}
+
+@keyframes example {
+    25%   {background-color:yellow; left:200px; top:0px;}
+    0%  {background-color:red; left:0; top:200px;}
+</style>
+</head>
+<body>
+
+
+<div id="a"><p style="font-size:50px;">H</p></div>
+<br><br>
+<div id="b"><p style="font-size:50px;">E</p></div>
+<br><br>
+<div id="c"><p style="font-size:50px;">L</p></div>
+<br><br>
+<div id="d"><p style="font-size:50px;">L</p></div>
+<br><br>
+<div id="e"><p style="font-size:50px;">O</p></div>
+<br><br>
+<div id="f"><p style="font-size:50px;">!</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button>Animate</button>
+
+
+<script>
+
+		var a=document.querySelector("#a")
+    	function add()
+    	{
+    		a.style.animationDuration="5s";
+        	a.style.borderRadius="10px"
+            a.style.border="3px solid #5FF000"
+     
+       	}
+    	add()
+
+    	var b=document.querySelector("#b")
+    	function add2()
+    	{
+    		b.style.animationDuration="10s";
+        	b.style.borderRadius="15px"
+            b.style.border="3px solid #004CF0"
+    	}
+    	add2()
+
+    	var c=document.querySelector("#c")
+    	function add3()
+    	{
+    		c.style.animationDuration="5s";
+    		c.style.borderRadius="10px"
+            c.style.border="3px solid #5FF000"
+   		}
+    	add3()
+
+     	var d=document.querySelector("#d")
+    	function add4()
+    	{
+    		d.style.animationDuration="10s";
+        	d.style.borderRadius="15px"
+            d.style.border="3px solid #004CF0"
+    	}
+    	add4()
+
+    	var e=document.querySelector("#e")
+    	function add5()
+    	{
+    		e.style.animationDuration="5s";
+        	e.style.borderRadius="10px"
+            e.style.border="3px solid #5FF000"
+    	}
+    	add5()
+
+    	var f=document.querySelector("#f")
+    	function add6()
+    	{
+    		f.style.animationDuration="10s";
+        	f.style.borderRadius="15px"
+            f.style.border="3px solid #004CF0"
+    	}
+    	add6()
+  
+
+</script>
+
+</body>
+</html>

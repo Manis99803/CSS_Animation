@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body
+{
+    background-color: #333;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    border-radius: 10px;
+    margin: 0;
+}
+
+
+@keyframes example {
+    0%   {background-color:#333; left:0px; top:0px;}
+    25%  {background-color:yellow; left:400px; top:0px;}
+    50%  {background-color:#FF1234; left:400px; top:200px;}
+    75%  {background-color:orange; left:0px; top:200px;}
+    100% {background-color:#333; left:0px; top:0px;}
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div id="a"><p style="font-size:50px;">E</p></div><br>
+<div id="b"><p style="font-size:50px;">V</p></div><br>
+<div id="c"><p style="font-size:50px;">O</p></div><br>
+<div id="d"><p style="font-size:50px;">L</p></div><br>
+<div id="e"><p style="font-size:50px;">V</p></div><br>
+<div id="f"><p style="font-size:50px;">E</p></div>
+
+
+
+
+<script>
+    var a=document.querySelector("#a")
+    var b=document.querySelector("#b")
+    var c=document.querySelector("#c")
+    var d=document.querySelector('#d')
+    var e=document.querySelector('#e')
+    var f=document.querySelector('#f')
+    function div1()
+    {
+        a.style.animationDuration="5s";
+        a.style.animationDirection="reverse";
+    }
+    div1()
+    function div2()
+    {
+        b.style.animationDuration="10s";
+        b.style.animationDirection="straight";
+    }
+    div2()
+
+    function div3()
+    {
+        c.style.animationDuration="15s";
+        c.style.animationDirection="reverse";
+    }
+    div3()
+    function div4()
+    {
+        d.style.animationDuration="20s";
+        d.style.animationDirection="straight";
+    }
+    div4()
+    function div5()
+    {
+        e.style.animationDuration="25s";
+        e.style.animationDirection="reverse";
+    }
+    div5()
+    function div6()
+    {
+        f.style.animationDuration="30s";
+        f.style.animationDirection="straight";
+    }
+    div6()
+
+</script>
+
+</body>
+</html>
